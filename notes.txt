@@ -1,0 +1,12 @@
+Why WebSockets instead of HTTP(S)?
+With WebSockets you can establish a persistent connection, which allows for bidirectional communication between client and server. Nowadays, you will mostly find REST based APIs on the web, which are built upon HTTP. These APIs are consumed as follows: The client requests a page or resource and the server responds (request-response). Thus, using WebSockets over HTTP can have the following advantages:  Realtime communication, less overhead, stream processing (video, etc.)
+
+The first and most important method you will encounter while working with Socket.IO is on(). The on() method takes two arguments: the name of the event, in this case “connection” and a callback which will be executed after every connection event
+The connection event returns a socket object which will be passed to the callback function.
+
+
+
+
+http:      To use the HTTP server and client one must require('http').
+The HTTP interfaces in Node.js are designed to support many features of the protocol which have been traditionally difficult to use. In particular, large, possibly chunk-encoded, messages. The interface is careful to never buffer entire requests or responses — the user is able to stream data.
+
