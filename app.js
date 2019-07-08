@@ -21,7 +21,7 @@ const io = socketIo(server);
 const getApiAndEmit = async socket => {
     try {
         //enter the api key to get the data
-        const res = await axios.get("https://api.darksky.net/forecast/f75d34e630f28985c412b0c45597bacb/37.8267,-122.4233")
+        const res = await axios.get("https://api.darksky.net/forecast/f75d34e630f28985c412b0c45597bacb/41.8240,-71.4128")
         //send new message through socket
         //this calls the locations current temp and updates every 10 seconds
         socket.emit("FromAPI", res.data.currently.temperature)
@@ -36,7 +36,7 @@ const PORT = process.env.PORT || 5000;
 let interval;
 //setup the socket to update every 10seconds
 io.on("connection", socket => {
-  console.log(chalk.green('New client has connected to socket.'));
+  console.log(chalk.bgGreen('New client has connected to socket.'));
   //create a new interval for each new connection
   if (interval) {
     clearInterval(interval);
@@ -44,7 +44,7 @@ io.on("connection", socket => {
   //set the interval for the socket to update to 10 seconds
   interval = setInterval(() => getApiAndEmit(socket), 10000)
   socket.on("disconnect", () => {
-      console.log(chalk.yellow('Client has disconnected from socket.'))
+      console.log(chalk.bgYellow('Client has disconnected from socket.'))
   })
 });
 
