@@ -4,12 +4,13 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "server": "nodemon /server/server.js",
+    "start": "node ./server/server.js",
+    "server": "nodemon ./server/server.js",
+    "PublicChat": "nodemon ./server/PublicChat.js",
     "RoomChat": "nodemon ./server/RoomChat.js",
     "client": "npm start --prefix client",
     "client-install": "npm install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run RoomChat\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run RoomChat\" \"npm run PublicChat\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
