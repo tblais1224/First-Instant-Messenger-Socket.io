@@ -6,9 +6,10 @@
   "scripts": {
     "start": "node server/server.js",
     "server": "nodemon /server/server.js",
+    "RoomChat": "nodemon ./server/RoomChat.js",
     "client": "npm start --prefix client",
     "client-install": "npm install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run RoomChat\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
