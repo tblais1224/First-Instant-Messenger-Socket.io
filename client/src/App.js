@@ -1,20 +1,16 @@
 import React, { Component } from "react";
-import { Container, Row } from "reactstrap";
-
-//components
-import Header from "./components/Header";
-import LiveVisitors from "./components/LiveVisitors";
+import Layout from "./containers/Layout";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
-        <Container>
-          <Row>
-            <LiveVisitors/>
-          </Row>
-        </Container>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" component={Layout}></Route>
+          </Switch>
+        </BrowserRouter>
       </React.Fragment>
     );
   }
