@@ -1,0 +1,129 @@
+/* html, body {
+    height: 100%;
+    margin: 0px;
+}
+.wrapper {
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100%;
+}
+
+.col-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+}
+.row-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 20%;
+}
+.col-wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  width: 100%;
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+  width: 100%;
+}
+
+.main {
+  text-align: left;
+  height: 100px;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .chat {
+    flex: 3 0px;
+  }
+  .chatrooms {
+    order: 1;
+  }
+  .chat {
+    order: 2;
+  }
+  .options {
+    order: 3;
+  }
+} */
+
+
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+.vwrapper {
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+
+  height: 100%;
+}
+
+  #row1 {
+    background-color: red;
+
+  }
+
+  #row2 {
+    background-color: blue;
+  }
+
+  #row3 {
+     background-color: green;
+      flex: 1 1 auto;
+
+    display: flex;
+  }
+    #col1 {
+      background-color: yellow;
+      flex: 1 0 240px;
+    }
+
+    #col2 {
+      background-color: orange;
+      flex: 1 1 200px;
+    }
+
+    #col3 {
+      background-color: purple;
+      flex: 1 0 240px;
+    }

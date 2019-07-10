@@ -12,8 +12,8 @@ class Layout extends Component {
     return (
       <React.Fragment>
         <Header />
-        <Container>
-          <Row>
+        
+          
             <Switch>
               {/* map through routes file */}
               {routes.map((route, index) => {
@@ -27,8 +27,8 @@ class Layout extends Component {
                 ) : null;
               })}
             </Switch>
-          </Row>
-        </Container>
+          
+        
       </React.Fragment>
     );
   }
