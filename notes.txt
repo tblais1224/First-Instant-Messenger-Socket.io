@@ -10,3 +10,5 @@ The connection event returns a socket object which will be passed to the callbac
 http:      To use the HTTP server and client one must require('http').
 The HTTP interfaces in Node.js are designed to support many features of the protocol which have been traditionally difficult to use. In particular, large, possibly chunk-encoded, messages. The interface is careful to never buffer entire requests or responses — the user is able to stream data.
 
+try this below:
+https://blog.slatepeak.com/creating-a-real-time-chat-api-with-node-express-socket-io-and-mongodb/
